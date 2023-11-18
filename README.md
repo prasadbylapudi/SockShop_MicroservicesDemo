@@ -1,6 +1,31 @@
 [![Build Status](https://travis-ci.org/microservices-demo/microservices-demo.svg?branch=master)](https://travis-ci.org/microservices-demo/microservices-demo)
 
-# Sock Shop : A Microservice Demo Application
+# Sock Shop: A Microservice Demo Application
+
+I have isolated the tests container from other services and testing the tests service separately. 
+
+## starting the other services.
+```
+  docker-compose -f deploy/docker-compose/docker-compose.yml up -d
+```
+
+## Running tests service.
+move to the tests folder 
+``` cd tests ```
+
+#### Build
+```
+docker build . 
+
+```
+
+#### Running the tests service.
+```
+docker run tests
+```
+
+I have used the JEST framework for writing the Integration test cases.
+
 
 The application is the user-facing part of an online shop that sells socks. It is intended to aid the demonstration and testing of microservice and cloud native technologies.
 
