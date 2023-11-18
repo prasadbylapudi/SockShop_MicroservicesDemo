@@ -23,6 +23,9 @@ docker build .
 ```
 docker run tests
 ```
+the sample output looks like this
+![image](https://github.com/prasadbylapudi/SockShop_MicroservicesDemo/assets/31813770/bbf82150-c77d-4af4-9132-5bc5db31d122)
+
 
 I have used the JEST framework for writing the Integration test cases.
 
